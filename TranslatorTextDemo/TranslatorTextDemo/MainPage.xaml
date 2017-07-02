@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TranslatorTextDemo"
+             x:Class="TranslatorTextDemo.MainPage">
+    <Grid>
+        <Label x:Name="label" Text="Translator Text Translation API デモ" HorizontalTextAlignment="Start" Margin="40,0,0,0" VerticalTextAlignment="Start" FontSize="20"/>
+        <Label x:Name="EnterTextLabel" Text="テキストを入力" HorizontalTextAlignment="Start" Margin="40,50,0,0" VerticalTextAlignment="Start" FontSize="20"/>
+        <Label x:Name="selectLabel" Text="翻訳する言語を選択：" HorizontalTextAlignment="Start" Margin="40,130,0,0" VerticalTextAlignment="Start" FontSize="20"/>
+        <Editor x:Name="textToTranslate" HorizontalOptions="Start" Margin="40,85,0,0" VerticalOptions="Start" WidthRequest="600" FontSize="20" />
+        <Picker x:Name="LanguagePicker" HorizontalOptions="Start" Margin="40,165,0,0" VerticalOptions="Start" WidthRequest="130"></Picker>
+        <Button x:Name="translateButton" Text="翻訳開始" HorizontalOptions="Start" Margin="40,205,0,0" VerticalOptions="Start" WidthRequest="100"  Clicked="translateButton_Click" FontSize="20"/>
+        <Label x:Name="translatedTextLabel" Text="翻訳" HorizontalTextAlignment="Start" Margin="40,255,0,0" VerticalTextAlignment="Start" WidthRequest="650" FontSize="20"/>
+    </Grid>
+</ContentPage>
